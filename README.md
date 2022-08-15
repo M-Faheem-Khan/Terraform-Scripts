@@ -1,5 +1,5 @@
-# Terraform-Scripts
-Scripts used to deploy stuff to AWS/GCP/Digital Ocean
+# Terraform-Splunk-Deployment
+Terraform script to deploy Splunk to Digital Ocean.
 
 ## Deployment Steps
 - Set `DIGITAL_OCEAN_SECRET` environment variable to Digital Ocean personal api token (Token can be issue from [API dashboard](https://cloud.digitalocean.com/account/api/tokens)).
