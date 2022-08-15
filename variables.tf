@@ -21,5 +21,16 @@ variable "droplet_ubuntu_20_04_x64" {
   default     = "ubuntu-20-04-x64"
 }
 
+variable "public_ssh_key_name" {
+  type        = string
+  description = "name of the public ssh key for the splunk server"
+  default     = "splunk-server-ssh-key"
+}
+
+variable "public_ssh_key_path" {
+  type        = string
+  description = "path to the public ssh key"
+  default     = "./id_rsa.pub"
+}
 
 # EOF
