@@ -2,6 +2,8 @@
 Scripts used to deploy stuff to AWS/GCP/Digital Ocean
 
 ## Deployment Steps
+- Set `DIGITAL_OCEAN_SECRET` environment variable to Digital Ocean personal api token (Token can be issue from [API dashboard](https://cloud.digitalocean.com/account/api/tokens)).
+
 1. `terraform init`
 2. `terraform plan -var="do_token=$DIGITAL_OCEAN_SECRET"`
 3. `terraform apply -var="do_token=$DIGITAL_OCEAN_SECRET" --auto-approve`
